@@ -1,0 +1,336 @@
+/*===================================
+                Fonts
+===================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*===================================
+        General Styles
+===================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    max-width: 1440px;
+}
+
+h2{
+    font-size: 3.5rem;
+}
+
+/*===================================
+            Header/Hero
+===================================*/
+
+header{
+    background: url("../img/ilustracion1.png") top right/contain no-repeat;
+    background-size: 55% 67.65%;
+    padding-top: 5vh;
+    position: relative;
+}
+
+header>img{
+    position: absolute;
+    height: 60%;
+    width: 60%;
+    left: 40vw;
+    top: 11vh;
+    animation: upAndDown 2s linear alternate infinite;
+}
+
+@keyframes upAndDown 
+{
+    0%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(20px);
+    }
+}
+
+header>div{
+    display: flex;
+}
+
+header>div>img{
+    height: 45px;
+    width: 45px;
+    margin: 0 2vw 0 4vw;
+    position: fixed;
+}
+
+header>div>ul{
+    list-style: none;
+    padding-left: 9vw;
+}
+
+header>div>ul>li>h2{
+    font-size: 1.5em;
+}
+
+header>h1{
+    font-size: 5rem;
+    word-break: break-word;
+    padding: 30vh 0 0 10vw;
+    width: 55vw;
+}
+
+header>p{
+    padding: 3vh 0 0 10vw;
+    word-break: break-word;
+    width: 60vw;
+    font-size: 1.5rem;
+}
+
+header>p>img{
+    height: 30px;
+    width: 30px;
+}
+
+header>span{
+    display: block;
+    padding: 15vh 0 15vh 10vw;
+    color: #ff3571;
+    font-weight: bold;
+}
+
+/*===================================
+            Main
+===================================*/
+
+/*== Section 1 - Gallery ==*/
+
+section:nth-of-type(1)>img{
+    width: 100%;
+}
+
+/*== Section 2 - Every Idea ==*/
+
+section:nth-of-type(2){
+    padding: 20vh 0 18vh 10vw;
+    display: flex;
+}
+
+section:nth-of-type(2)>h2{
+    width: 25vw;
+}
+
+section:nth-of-type(2)>h2>img{
+    width: 45px;
+}
+
+section:nth-of-type(2)>p{
+    width: 42vw;
+    margin-left: 8vw;
+    line-height: 35px;
+    font-size: 20px;
+}
+
+/*== Section 3 - After several weeks ==*/
+
+section:nth-of-type(3)>h2{
+    width: 47vw;
+    padding-bottom: 15vh;
+}
+
+section>article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section:nth-of-type(3){
+    padding: 20vh 10vw 0 10vw;
+}
+
+section:nth-of-type(3)>article>div{
+    display: flex;
+    padding: 5vh 0;
+}
+
+section:nth-of-type(3)>article>div>div:nth-of-type(odd){
+    display: flex;
+    align-items: flex-start;
+    padding-right: 2vw;
+}
+
+section:nth-of-type(3)>article>div>div:nth-of-type(odd)>img{
+    width: 35px;
+}
+
+section:nth-of-type(3)>article>div>div:nth-of-type(even){
+    display: inline-block;
+    width: 28vw;
+}
+
+/*== Section 4 - Are you ready? ==*/
+
+section:nth-of-type(4){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-of-type(4)>h2{
+    text-align: center;
+    padding: 10vh 0 5vh 0;
+}
+
+section:nth-of-type(4)>p{
+    width: 40vw;
+    padding-bottom: 10vh;
+}
+
+section:nth-of-type(4)>div>h2{
+    color: #dddddd;
+    padding: 2vh 0 4vh 0;
+}
+
+section:nth-of-type(4)>div>h4{
+    padding: 1vh 0 1vh 0;
+}
+
+section:nth-of-type(4)>div>p:nth-of-type(odd){
+    padding: 1vh 0 15vh 0;
+    line-height: 35px;
+}
+
+section:nth-of-type(4)>div:nth-of-type(even)>p{
+    padding: 1vh 0 15vh 0;
+    line-height: 35px;
+    width: 40vw;
+}
+
+section:nth-of-type(4)>div:nth-of-type(1){
+    background: url("../img/step01.png") left/contain no-repeat;
+    margin-bottom: 10vh;
+    padding-left: 45%;
+    width: 80%;
+}
+
+section:nth-of-type(4)>div:nth-of-type(2){
+    background: url("../img/step02.png") right/contain no-repeat;
+    margin-bottom: 10vh;
+    width: 80%;
+}
+
+section:nth-of-type(4)>div:nth-of-type(3){
+    background: url("../img/step03.png") left/contain no-repeat;
+    margin-bottom: 10vh;
+    padding-left: 45%;
+    width: 80%;
+}
+
+section:nth-of-type(4)>div:nth-of-type(4){
+    background: url("../img/step04.png") right/contain no-repeat;
+    margin-bottom: 10vh;
+    width: 80%;
+}
+
+/*===================================
+            Footer
+===================================*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20%;
+    width: 60%;
+    margin: 2vh 0 14vh 0;
+}
+
+footer>div>h2{
+    text-align: center;
+    padding-bottom: 5vh;
+
+}
+
+footer>div>p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+footer>div>a{
+    background: #3C30FF;
+    text-transform: uppercase;
+    width: 25vw;
+    display: block;
+    align-self: center;
+    margin: 3vh 0 1vh 0;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+footer>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15vh;
+    height: 20%;
+    width: 60%;
+}
+
+footer>form>h2{
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+footer>form>p{
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 5vh;
+}
+
+footer>form>input{
+    padding: 5vh 0; 
+    text-align: center;
+    border-style: none;
+}
+
+footer>form>button{
+    width: 10vw;
+    display: block;
+    align-self: center;
+    margin: 3vh 0 1vh 0;
+    padding: 10px;
+    border: none;
+    color: white;
+    background: #ff3571;
+    border-radius: 5px;
+}
+
+footer>form>button:hover{
+    background: linear-gradient(to right, #ff3571, #3C30FF)
+}
+
+
+footer>p{
+    align-self: flex-start;
+    margin: 0 0 2vh 2vw;
+}
+
+footer>p>img{
+    width: 25px;
+}
+
+.invisible{
+    display: none;
+}
